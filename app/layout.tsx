@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-import { Footer } from "@/components/footer";
 const baseUrl =
   process.env.NEXT_PUBLIC_SITE_URL || "https://md-board.vercel.app";
 export const metadata: Metadata = {
