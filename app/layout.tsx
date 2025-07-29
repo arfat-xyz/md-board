@@ -71,9 +71,7 @@ html {
 }
         `}</style>
       </head>
-      <body>
-        {children} <Footer />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
