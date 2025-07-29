@@ -3,7 +3,8 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Footer } from "@/components/footer";
-
+const baseUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://md-board.vercel.app";
 export const metadata: Metadata = {
   title: "MD Board | Real-Time Markdown Editor with Sidebar",
   description:
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "MD Board",
     images: [
       {
-        url: "/og-image.png", // Absolute path recommended
+        url: `${baseUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "MD Board: Markdown Editor with Sidebar",
@@ -49,8 +50,8 @@ export const metadata: Metadata = {
     title: "MD Board | Real-Time Markdown Editor with Sidebar",
     description:
       "Write, preview, and organize markdown in real-time. Add unlimited boards and auto-save edits.",
-    creator: "@arfatrahman", // Update with your Twitter handle if needed
-    images: ["/og-image.png"],
+    creator: "@arfatapp", // Update with your Twitter handle if needed
+    images: [`${baseUrl}/og-image.png`],
   },
 };
 
